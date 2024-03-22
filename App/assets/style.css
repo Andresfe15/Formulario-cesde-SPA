@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fuente1;
+    src: url(fuente/coolvetica\ rg.otf);
+}
+
+body {
+    font-family: fuente1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f0b9b9;
+    height: 75px;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+
+.logo img {
+    width: 75%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu li a {
+    color: #e45355;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario y Imágenes */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.images,
+.form-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.images img {
+    width: 90%;
+    height: 225px;
+    margin-bottom: 10px;
+}
+
+.form-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    height: 300px; /* Establecer altura fija */
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
